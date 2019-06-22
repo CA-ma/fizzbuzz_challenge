@@ -9,6 +9,7 @@ Back to lines 3 and 4.  ```global```, I assume because this [Node.js documentati
 
 2. ```let fizzBuzz = new FizzBuzz()``` is creating a new instance of the contructor/class FizzBuzz.  An instance is needed for further tests to use, or else there will be no 'thing' to test.  It is put outside the 'it' tests so that each 'it' test can inherit the properties of the new instance.  It serves a similar purpose as instance_doubles, but instead of being a copy or 'double', it is 'real' thing.
 
+3. '===' checks to see if both variables on either side of the equation are equal in both type and value.  '==' checks to see if both variables are equal in value after trying to convert to the same type, if initially different types.  Type conversion can get tricky and brings the importance of truthy and falsey into play in certain scenarios.
 
 
 ## Authors
