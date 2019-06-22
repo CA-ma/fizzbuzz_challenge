@@ -1,4 +1,4 @@
-require('../spec.helper');
+require('../spec/spec.helper');
 
 context('Your Description of the test scenario', () => {
   // Initialize a browser and visit the server's root path
