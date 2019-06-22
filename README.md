@@ -11,6 +11,10 @@ Back to lines 3 and 4.  ```global```, I assume because this [Node.js documentati
 
 3. '===' checks to see if both variables on either side of the equation are equal in both type and value.  '==' checks to see if both variables are equal in value after trying to convert to the same type, if initially different types.  Type conversion can get tricky and brings the importance of truthy and falsey into play in certain scenarios.
 
+4. For now, I don't think it matters if the % 5 or the % 3 is on top of the if statement logic.  We will eventually be adding % 15 which takes care of the case of being both divisible by 3 and 5, so evaluating divisible by 5 or 3 first shouldn't matter.
+
+
+
 
 ## Authors
 Max Aubain
