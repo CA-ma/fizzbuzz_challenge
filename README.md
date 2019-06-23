@@ -18,10 +18,24 @@ Back to lines 3 and 4.  ```global```, I assume because this [Node.js documentati
 6. The three conditions initially described in the file explain how the browser needs to respond 'before' all the tests run, what should happen 'beforeEach' test is run, and how the browser concludes 'after' the tests are complete.  The 'before' initializes a new browser window and goes to where the app is hosted on the local server.  The page must reload 'beforeEach' test.  The browser closes itself 'after' the tests are done.
 
 7. The test code will check if the following processes in the index.html file...
-* Find an <input> with the id = 'value' and give it an input of "3"
-* Click on the <input> with the id = 'Check' (assuming this input is configured to act like a button)
+* Find an html body input with the id = 'value' and give it an input of "3"
+* Click on the input with the id = 'Check' (assuming this input is configured to act like a button)
 * assign, to the variable 'content', the value in the html object with the id = 'display_answer'
 * test to see if 'content' is equal to the string 'Fizz'
+
+8. The javascript code in the index.html file accomplishes the following...
+* Add an event listener that triggers when the webpage loads, and then run the function that configures the rest of the webpage with our JS scripts.  The next items in this list are from that configuration function.
+* The variable 'button' is assigned an Element with the id = 'button'.
+* The variable 'displayDiv' is assigned an Element with the id = 'display_answer'.
+* Add an event listener that listens for 'click' and runs the following fuction...
+* The variable 'value' is assigned the value of the element with id = 'value'.
+* The variable 'fizzBuzz' is assigned a new FizzBuzz instance
+* The variable 'result' is assigned the fizzBuzz instance with the argument 'value' and the function '.check' applied.
+* The variable 'result' is displayed on the webpage at 'displayDiv'
+
+9. A CDN is a web-based service where scripts, databases, security keys, nor other types of information are provided to a web development framework via a server.  The framework is linked to the server with a web address.  In this particular project, the framework is linked to the CDN server with web links defined in the header of the index.html file.
+
+
 
 
 ## Authors
