@@ -13,7 +13,15 @@ Back to lines 3 and 4.  ```global```, I assume because this [Node.js documentati
 
 4. For now, I don't think it matters if the % 5 or the % 3 is on top of the if statement logic.  We will eventually be adding % 15 which takes care of the case of being both divisible by 3 and 5, so evaluating divisible by 5 or 3 first shouldn't matter.
 
+5. A feature test is a test defined from the behavioral-driven domain, defining a test for program functionality that is measureable in the end product, i.e. something that an app user would care about.  A unit test is a test defined from test-driven domain which tests a finite portion of code, such as a specific function or the interaction of a few functions.
 
+6. The three conditions initially described in the file explain how the browser needs to respond 'before' all the tests run, what should happen 'beforeEach' test is run, and how the browser concludes 'after' the tests are complete.  The 'before' initializes a new browser window and goes to where the app is hosted on the local server.  The page must reload 'beforeEach' test.  The browser closes itself 'after' the tests are done.
+
+7. The test code will check if the following processes in the index.html file...
+* Find an <input> with the id = 'value' and give it an input of "3"
+* Click on the <input> with the id = 'Check' (assuming this input is configured to act like a button)
+* assign, to the variable 'content', the value in the html object with the id = 'display_answer'
+* test to see if 'content' is equal to the string 'Fizz'
 
 
 ## Authors
