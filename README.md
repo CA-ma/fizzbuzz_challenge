@@ -33,10 +33,7 @@ Back to lines 3 and 4.  ```global```, I assume because this [Node.js documentati
 * The variable 'result' is assigned the fizzBuzz instance with the argument 'value' and the function '.check' applied.
 * The variable 'result' is displayed on the webpage at 'displayDiv'
 
-9. A CDN is a web-based service where scripts, databases, security keys, nor other types of information are provided to a web development framework via a server.  The framework is linked to the server with a web address.  In this particular project, the framework is linked to the CDN server with web links defined in the header of the index.html file.
-
-
-
+9. A content delivery network - CDN - is a web-based service where scripts, databases, security keys, or other types of information are provided to a web deployment framework via a server.  The framework is linked to the server with a web address.  In this particular project, the framework is linked to the CDN server with web links defined in the header of the index.html file.
 
 ## Authors
 Max Aubain
